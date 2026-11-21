@@ -139,3 +139,44 @@ Saat menguji 3 iklan (misal: Iklan A, B, C):
      * Frekuensi sudah tinggi (> 3–4) dan biaya CPR naik signifikan. Ini tanda audiens sudah bosan melihat materi tersebut. Matikan dan gantikan dengan materi pemenang baru dari Campaign 20%.
   3. **Iklan "Mati Suri" (*No Delivery*):**
      * Iklan yang selama berhari-hari hampir tidak mendapatkan porsi spend dari algoritma Meta (misal Meta hanya memberi spend ke iklan lain). Matikan agar struktur ad set tetap bersih dan terarah.
+
+---
+
+## 7. Aturan Otomatis (Automated Rules): Panduan Safety Net Anti-Boncos
+
+### Apakah Perlu?
+**Sangat Perlu**, terutama sebagai **jaring pengaman (safety net)** saat Anda sedang tidur, sibuk, atau tidak sempat membuka Ads Manager seharian.
+
+> [!WARNING]
+> **Peringatan Penting:** 
+> Pasang aturan otomatis di **level Iklan (Ad)**, **BUKAN di level Campaign**. Jika dipasang di level Campaign, satu iklan yang bermasalah bisa mematikan seluruh campaign beserta iklan-iklan lain yang sebenarnya sedang profit.
+
+---
+
+### Rekomendasi 2 Template Aturan Otomatis yang Wajib Dimiliki:
+
+#### 1. Aturan "Cut Loss" (Matikan Iklan Tanpa Hasil)
+Mencegah materi eksperimen menghabiskan uang tanpa mendatangkan konversi satu pun.
+* **Terapkan pada:** Iklan Aktif (*Active Ads*).
+* **Kondisi / Syarat:**
+  * `Spent > 1.5x target CPR` (Contoh: jika target CPR Rp 50.000, pasang batas spend Rp 75.000).
+  * `Results (Konversi/Leads) < 1` (Nol konversi).
+  * **Jendela Waktu (*Time Range*):** Sepanjang waktu (*Lifetime*).
+* **Aksi:** Matikan Iklan (*Turn OFF Ad*).
+
+#### 2. Aturan "CPR Melejit" (Matikan Iklan yang Boncos / Jenuh)
+Mendeteksi iklan lama atau baru yang biayanya membengkak melewati ambang batas toleransi.
+* **Terapkan pada:** Iklan Aktif (*Active Ads*).
+* **Kondisi / Syarat:**
+  * `Cost per Result > 1.3x target CPR` (Contoh: jika target Rp 50.000, batasnya Rp 65.000).
+  * `Spent > 2x target CPR` (Pastikan iklan sudah membelanjakan cukup anggaran agar sampel datanya valid).
+  * **Jendela Waktu (*Time Range*):** 3 Hari Terakhir (*Last 3 days, including today/excluding today*).
+* **Aksi:** Matikan Iklan (*Turn OFF Ad*) ATAU Kirim Notifikasi saja (*Send notification only*).
+
+---
+
+### Kesalahan Fatal yang Harus Dihindari saat Menggunakan Aturan Otomatis:
+1. **Menggunakan Timeframe "Hari Ini" (*Today*):**
+   * Pixel Meta sering mengalami keterlambatan pencatatan (*delayed attribution* 1–3 jam). Jika Anda mengevaluasi data per jam atau hanya hari ini, iklan yang baru menghasilkan konversi bisa terlanjur mati secara keliru.
+2. **Lupa Memberi Filter Spend Minimum:**
+   * Jangan buat aturan yang hanya mengecek "Results = 0". Tanpa filter spend, iklan baru yang baru jalan 5 menit dan membelanjakan Rp 500 akan langsung dimatikan oleh sistem.
