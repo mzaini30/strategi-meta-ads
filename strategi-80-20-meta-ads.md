@@ -94,3 +94,48 @@ Gunakan panduan berikut saat memantau campaign 20%:
    * **CPC (Cost per Click):** Lebih rendah atau sebanding dengan rata-rata iklan sebelumnya.
 3. **Metrik Keputusan Akhir (Bottom of Funnel):**
    * **CPA / CPR (Cost per Result / Leads / Purchase):** Jika materi uji coba menghasilkan konversi dengan biaya yang sama atau lebih murah dibanding campaign 80%, materi tersebut resmi menjadi **Winner**.
+
+---
+
+## 6. SOP Praktis & Siklus Hidup Iklan (Operational Rules)
+
+Berikut panduan langkah demi langkah saat mengoperasikan kedua campaign:
+
+### A. Langkah Awal (Memulai Pertama Kali)
+1. **Jika sudah punya iklan lama yang terbukti menghasilkan:**
+   * Langsung masukkan 1–3 iklan terbukti tersebut ke dalam **Campaign 80% (Scaling)**.
+   * Buat 2–3 variasi materi baru di **Campaign 20% (Testing)**.
+2. **Jika benar-benar baru dari nol:**
+   * Jangan langsung paksakan 80% scaling karena belum ada pemenang yang terbukti.
+   * Jalankan campaign testing terlebih dahulu (atau bagi rata budget di awal) sampai menemukan 1 materi iklan pertama yang CPR-nya masuk target. Begitu ketemu, jadikan itu pondasi awal Campaign 80%.
+
+---
+
+### B. Prosedur di Campaign Testing (20%) — Misal Ada 3 Iklan
+Saat menguji 3 iklan (misal: Iklan A, B, C):
+1. **Beri batas spend (Spend Threshold):**
+   * Jangan matikan sebelum menghabiskan minimal **1x – 2x target CPR**.
+2. **Keputusan setelah data terkumpul:**
+   * **Iklan A (Menang - CPR murah & stabil):**
+     * Salin ke Campaign 80%. (*Tips Pro:* gunakan opsi **"Use Existing Post" / Post ID** agar jumlah Likes, Komentar, dan Shares tetap terbawa).
+     * **Matikan (Turn OFF)** Iklan A di Campaign 20% agar tidak saling bersaing (*audience overlap*) dengan dirinya sendiri di Campaign 80%.
+   * **Iklan B (Kalah - CPR mahal melebihi batas batas):**
+     * **Matikan (Turn OFF).**
+   * **Iklan C (Nanggung - spend belum mencapai ambang batas):**
+     * Biarkan jalan dulu sampai spend-nya memenuhi batas pengujian sebelum dievaluasi.
+3. **Isi kembali slot eksperimen:**
+   * Masukkan materi/sudut pandang baru berikutnya ke Campaign 20% untuk siklus uji berikutnya.
+
+---
+
+### C. Manajemen di Campaign Scaling (80%) — Berapa Iklan yang Boleh Aktif?
+* **Apakah boleh ada 10 iklan aktif sekaligus?**
+  * **Sangat tidak disarankan.** Idealnya hanya ada **3 sampai 5 iklan aktif** secara bersamaan dalam satu ad set scaling.
+  * *Alasannya:* Jika terlalu banyak iklan aktif, budget harian akan terpecah-pecah (*budget dilution*), fase pembelajaran (*learning phase*) terhambat, dan Meta biasanya tetap hanya memprioritaskan 1–2 materi favoritnya.
+* **Kapan iklan di Campaign 80% harus dimatikan?**
+  1. **CPR Melampaui Toleransi (Rata-rata 3–7 hari terakhir):**
+     * Jika performa iklan mulai memburuk dan CPR rata-rata 3–7 hari terakhir sudah jauh di atas target batas maksimal, segera matikan.
+  2. **Ad Fatigue (Iklan Jenuh):**
+     * Frekuensi sudah tinggi (> 3–4) dan biaya CPR naik signifikan. Ini tanda audiens sudah bosan melihat materi tersebut. Matikan dan gantikan dengan materi pemenang baru dari Campaign 20%.
+  3. **Iklan "Mati Suri" (*No Delivery*):**
+     * Iklan yang selama berhari-hari hampir tidak mendapatkan porsi spend dari algoritma Meta (misal Meta hanya memberi spend ke iklan lain). Matikan agar struktur ad set tetap bersih dan terarah.
